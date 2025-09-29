@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- META BÁSICO -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B&LSuperTiCF • Suporte de TI + Loja</title>
+  <meta name="description" content="Suporte de TI profissional para empresas e residências. Help desk, formatação, backup, redes, segurança, além de uma mini loja de periféricos e relógios." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="icon" type="image/png" href="imagens/favicon.png">
+
+  
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230ea5e9'/><path d='M25 65l13-30 14 30 13-30' stroke='white' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+
+  
+  </style>
+
+  <!-- SCHEMA ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "B&LSuperTiCF - Suporte de TI",
+    "url": "https://exemplo.bl-solutions.local",
+    "image": "https://exemplo.bl-solutions.local/logo.png",
+    "telephone": "+55 11 97726-8599",
+    "areaServed": "Brasil",
+    "address": {"@type":"PostalAddress","addressCountry":"BR"},
+    "sameAs": [
+      "https://wa.me/5511955519303"
+    ]
+  }
+  </script>
+</head>
+
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-badge">BL</span>
+        <span>B&LSuperTiCF</span>
+      </a>
+
+
+      
+      <!-- MENU TOGGLE (mobile) -->
+      <div class="menu-toggle" id="menuToggle" aria-label="Abrir menu" role="button" tabindex="0" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- NAV -->
+      <nav aria-label="Principal">
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="#servicos"><i class="fas fa-cogs"></i> Serviços</a>
+            <ul class="submenu">
+              <li><a href="#suporte">Suporte</a></li>
+              <li><a href="#infra">Infraestrutura</a></li>
+              <li><a href="#backup">Backup & Nuvem</a></li>
+              <li><a href="#contato"> Contato </a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#loja"><i class="fas fa-store"></i> Loja</a>
+            <ul class="submenu">
+              <li><a href="#perifericos">Periféricos</a></li>
+              <li><a href="#relogios">Relógios</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+          <li class="nav-item"><a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
+          <li class="nav-item"><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+
+        <!-- versão móvel (será clonada dinamicamente) -->
+        <ul class="nav-links-mobile" id="navMobile" style="display:none"></ul>
+      </nav>
+
+      <div class="cta">
+        <a class="btn ghost" href="https://wa.me/5511955519303" target="_blank" rel="noopener"> <i class="fab fa-whatsapp" style="color:#25D366;margin-right:8px"></i> WhatsApp</a>
+        <button class="btn primary" id="openCart">🛒 Comprar (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+<!--Formulario do menu -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário no Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    #formContainer {
+      display: none; /* Começa escondido */
+      padding: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a onclick="toggleForm()">Abrir Formulário</a>
+    <a href="#">Outra Página</a>
+  </nav>
+
+  <div id="formContainer">
+    <iframe src="https://forms.gle/P8LLmrD5XSBHZjUR6" title="Formulário de Feedback">
+
+    </iframe>
+      Carregando…
+  </div>
+
+  <script>
+    function toggleForm() {
+      const container = document.getElementById('formContainer');
+      container.style.display = container.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <span class="chip">⏱️ Atendimento rápido • 🔒 Segurança • 🧠 Profissional</span>
+        <h1 class="title">Suporte de TI completo para a sua empresa e residência</h1>
+        <p class="subtitle">Help desk, formatação, upgrade, backup, redes, segurança, servidores, nuvem e consultoria. Conte com um parceiro técnico para manter tudo funcionando — e ainda aproveite nossa mini loja com <b>periféricos</b> e <b>relógios</b>.</p>
+        <div style="display:flex; gap:10px; margin-top:16px">
+          <a class="btn primary" href="#servicos">Conheça os serviços</a>
+          <a class="btn" href="#loja">Ir para a loja</a>
+        </div>
+        <div class="grid-stats">
+          <div class="stat"><div>⏳ Tempo médio de resposta</div><b>&lt; 1h</b></div>
+          <div class="stat"><div>💼 Chamados resolvidos</div><b>1.200+</b></div>
+          <div class="stat"><div>⭐ Satisfação</div><b>4,9/5</b></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg viewBox="0 0 600 420" width="100%" height="100%" role="img" aria-label="Ilustração suporte de TI">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+          <rect x="24" y="40" width="552" height="340" rx="18" fill="#0f172a" stroke="#1f2937"/>
+          <rect x="60" y="76" width="480" height="80" rx="12" fill="#0b1220" stroke="#1f2937"/>
+          <rect x="60" y="176" width="220" height="168" rx="12" fill="#0b1220" stroke="#1f2937"/>
+          <rect x="320" y="176" width="220" height="168" rx="12" fill="#0b1220" stroke="#1f2937"/>
+          <circle cx="120" cy="116" r="18" fill="url(#g1)"/>
+          <rect x="156" y="100" width="260" height="32" rx="8" fill="#111827"/>
+          <text x="180" y="121" font-size="16" fill="#cbd5e1">Monitoramento & Backup</text>
+          <text x="88" y="210" font-size="28" fill="#e5e7eb">Atendimento</text>
+          <text x="344" y="210" font-size="28" fill="#e5e7eb">Loja</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+   <section id="quem-somos" class="who-are-we">
+  <div class="container">
+    <h1>Quem Somos</h1>
+    <p>Somos a <strong>B&LSuperTiCF</strong>, uma empresa especializada em <strong>soluções de tecnologia e suporte de TI</strong>. Atendemos empresas e residências oferecendo manutenção preventiva e corretiva, suporte remoto e presencial, recuperação de dados e uma seleção completa de periféricos de alta qualidade.</p>
+    <p>Nosso compromisso é garantir que a tecnologia funcione a favor do seu negócio, proporcionando segurança, eficiência e inovação. Trabalhamos com profissionais qualificados, atendimento ágil e soluções personalizadas para cada cliente.</p>
+    <p>Acreditamos que a tecnologia transforma negócios e vidas e, por isso, investimos continuamente em qualidade, inovação e atendimento humano para entregar sempre os melhores resultados.</p>
+  </div>
+
+</section>
+
+<section id="missao" class="missao">
+  <div class="container">
+    <h1>Missão</h1>
+    <p>Prover soluções tecnológicas inovadoras e suporte de TI de alta qualidade, garantindo <strong>eficiência</strong>, <strong>segurança</strong> e <strong>inovação contínua</strong> 
+      para empresas e pessoas, transformando desafios em resultados positivos.</p>
+  </div>
+</section>
+
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="container">
+      <h2 class="title">Serviços de TI</h2>
+      <p class="subtitle">Planos sob medida e contratação avulsa. Atendemos presencialmente (região metropolitana) e remotamente para todo Brasil.</p>
+      <div class="cards" role="list">
+        <article class="card" role="listitem">
+          <h3 id="suporte">Help Desk & Suporte Remoto</h3>
+          <p>Resolução de problemas de software, sistemas contábeis, Office 365, drivers e apoio ao usuário. SLA com resposta ágil.</p>
+          <ul>
+            <li>Atendimento via WhatsApp e e-mail</li>
+            <li>Agendamento remoto imediato</li>
+          </ul>
+        </article>
+        <article class="card" role="listitem">
+          <h3 id="infra">Infraestrutura & Redes</h3>
+          <p>Projeto e manutenção de redes cabeadas e Wi‑Fi, firewall, VPN site‑to‑site, switches gerenciáveis e balanceamento.</p>
+          <ul>
+            <li>Segurança perimetral e endpoints</li>
+            <li>Monitoramento proativo</li>
+          </ul>
+        </article>
+        <article class="card" role="listitem">
+          <h3 id="backup">Backup & Nuvem</h3>
+          <p>Estratégia 3‑2‑1, backup local e em nuvem, Microsoft 365, Google Workspace, restauração e testes de DR.</p>
+          <ul>
+            <li>Políticas de retenção</li>
+            <li>Relatórios mensais</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+    <!-- LOJA -->
+<section id="loja">
+  <div class="container">
+    <h2 class="title">Mini Loja • Periféricos & Relógios</h2>
+    <p class="subtitle">Produtos selecionados para o dia a dia. Entrega local ou envio via transportadora/correios. Pagamento no PIX/Cartão (manual).</p>
+
+    <div class="shop">
+      <!-- FILTROS -->
+      <aside class="filtros">
+  <h3>Filtrar</h3>
+
+  <input type="text" id="buscaNome" placeholder="Buscar por nome..." />
+
+  <select id="categoria">
+    <option value="">Todas as categorias</option>
+    <option value="perifericos">Periféricos</option>
+    <option value="relogios">Relógios</option>
+  </select>
+
+  <select id="ordem">
+    <option value="populares">Mais populares</option>
+    <option value="menorPreco">Menor preço</option>
+    <option value="maiorPreco">Maior preço</option>
+  </select>
+
+ <div class="produto" data-promocao="true">
+  <img src="mouse.jpg" alt="Mouse Gamer RGB">
+  <h4>Mouse Gamer RGB</h4>
+  <p>Alta precisão 7200DPI</p>
+  <span>R$ 120,00</span>
+</div>
+
+
+  <button id="limparFiltros">Limpar filtros</button>
+</aside>
+
+
+      <!-- CATÁLOGO -->
+      <div class="catalog">
+        <!-- Produto Periférico 1 -->
+        <div class="product-card" data-category="Periféricos">
+          <img src="imagens/OIP (1).webp" alt="Teclado Mecânico Gamer" />
+          <h3>Teclado Mecânico Gamer</h3>
+          <p>Periférico de alto desempenho</p>
+          <span class="price">R$ 350,00</span>
+        </div>
+
+        <!-- Produto Periférico 2 -->
+        <div class="product-card" data-category="Periféricos">
+          <img src="imagens/mouse_gamer_redragon.webp" alt="Mouse Gamer RGB" />
+          <h3>Mouse Gamer RGB</h3>
+          <p>Alta precisão 7200DPI</p>
+          <span class="price">R$ 120,00</span>
+        </div>
+
+        <!-- Produto Relógio Smartwatch -->
+        <div class="product-card" data-category="Relógios">
+          <img src="imagens/L4X-0007-006_zoom3.webp" alt="Relógio Smartwatch" />
+          <h3>Relógio Smartwatch</h3>
+          <p>Monitoramento de saúde e notificações</p>
+          <span class="price">R$ 299,00</span>
+        </div>
+
+
+         <!-- Produto Pulseia  Smartwatch -->
+        <div class="product-card" data-category="Relógios">
+          <img src="imagens/OIP (2).webp" alt="Relógio Smartwatch" />
+          <h3>Relógio Smartwatch</h3>
+          <p>Monitoramento de saúde e notificações</p>
+          <span class="price">R$ 299,00</span>
+        </div>
+
+        <!-- Produto Relógio Smartchaw (exemplo) -->
+        <div class="product-card" data-category="Relógios">
+          <img src="imagens/br-11134207-7r98o-m3axdtnrbktx9c.jpg" alt="Relógio Smartchaw" />
+          <h3>Relógio Smartchaw</h3>
+          <p>GPS, monitoramento esportivo e mais</p>
+          <span class="price">R$ 399,00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="container">
+      <h2 class="title">Sobre B&LSuperTiCF</h2>
+      <p class="subtitle">Atuamos com foco em confiabilidade, segurança e atendimento humano. Nosso objetivo é simplificar a tecnologia e garantir continuidade para o seu negócio.</p>
+      <div class="cards">
+        <article class="card"><h3>Missão</h3><p>Manter pessoas e empresas produtivas com tecnologia que funciona sempre.</p></article>
+        <article class="card"><h3>Valores</h3><p>Transparência, compromisso, segurança e evolução contínua.</p></article>
+        <article class="card"><h3>Diferenciais</h3><p>Resposta rápida, documentação, relatórios claros e suporte multi‑canal.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <h2 class="title">Perguntas frequentes</h2>
+      <div class="cards">
+        <article class="card"><h3>Como funciona o pagamento?</h3><p>Após finalizar o pedido no carrinho, entraremos em contato para pagamento via Pix ou link de cartão.</p></article>
+        <article class="card"><h3>Qual o prazo de entrega?</h3><p>Envio em até 2 dias úteis. Para região metropolitana, oferecemos entrega própria sob consulta.</p></article>
+        <article class="card"><h3>Emitimos nota fiscal?</h3><p>Sim, para todos os serviços e produtos.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!---Depoimentos -->
+
+  <section id="depoimentos">
+  <div class="container">
+    <h2 class="title">O que nossos clientes dizem</h2>
+    <div class="cards">
+      <article class="card">
+        <p>“A BL Solutions resolveu nosso backup em tempo recorde. Atendimento impecável.”</p>
+        <strong>– João, Contabilidade ABC</strong>
+      </article>
+      <article class="card">
+        <p>“Equipe muito profissional e suporte rápido. Recomendo!”</p>
+        <strong>– Maria, Loja XYZ</strong>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container">
+      <h2 class="title">Contato</h2>
+      <form class="contact" id="contactForm">
+        <input required name="nome" placeholder="Nome"/>
+        <input required type="email" name="email" placeholder="E‑mail"/>
+        <input name="telefone" placeholder="Telefone/WhatsApp"/>
+        <input name="assunto" placeholder="Assunto"/>
+        <textarea name="mensagem" placeholder="Como podemos ajudar?"></textarea>
+        <button class="btn primary" type="submit">Enviar</button>
+        <a href="https://wa.me/5511955519303" target="_blank" class="whatsapp-float"></a>
+        
+      </form>
+      <p id="contactStatus" aria-live="polite" style="margin-top:10px"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;padding:18px 0">
+      <div>© <span id="year"></span> B&LSuperTiCF • CNPJ 00.000.000/0000‑00</div>
+      <div style="display:flex; gap:10px; align-items:center">
+        <a href="#" class="chip">Política de privacidade</a>
+        <a href="#" class="chip">Termos de uso</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO CARRINHO (fixo) -->
+  <div class="cart-toggle">
+    <button class="btn" id="openCartFloating">🛒</button>
+  </div>
+
+  <!-- PAINEL CARRINHO -->
+  <div class="cart-panel" id="cartPanel" aria-hidden="true" role="dialog">
+    <div class="backdrop" id="closeCart"></div>
+    <aside class="cart" aria-label="Carrinho de compras">
+      <header class="nav" style="padding:12px 14px">
+        <strong>Seu carrinho</strong>
+        <button class="btn" id="cartCloseBtn">Fechar</button>
+      </header>
+      <div class="list" id="cartList"></div>
+      <div class="total"><div style="display:flex;align-items:center;justify-content:space-between"><b>Total:</b> <b id="cartTotal">R$ 0,00</b></div></div>
+      <div class="checkout" id="checkout">
+        <h4>Finalizar pedido</h4>
+        <div class="row">
+          <input id="cName" placeholder="Nome completo" required>
+          <input id="cEmail" type="email" placeholder="E‑mail" required>
+        </div>
+        <div class="row">
+          <input id="cPhone" placeholder="Telefone/WhatsApp">
+          <input id="cDoc" placeholder="CPF/CNPJ (opcional)">
+        </div>
+        <textarea id="cAddress" placeholder="Endereço completo"></textarea>
+        <button class="btn primary" id="finishOrder">Enviar pedido</button>
+        <p id="orderStatus" style="margin-top:8px"></p>
+      </div>
+      <div style="padding:12px;display:flex;gap:10px">
+        <button class="btn" id="clearCart">Limpar carrinho</button>
+        <button class="btn primary" id="goCheckout">Ir para checkout</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- CHECKOUT COMPLETO -->
+<div class="checkout" id="checkout">
+  <h4>Finalizar pedido</h4>
+
+  <!-- Dados do cliente -->
+  <div class="row">
+    <input id="cName" placeholder="Nome completo" required>
+    <input id="cEmail" type="email" placeholder="E‑mail" required>
+  </div>
+
+  <div class="row">
+    <input id="cPhone" placeholder="Telefone/WhatsApp">
+    <input id="cDoc" placeholder="CPF/CNPJ (opcional)">
+  </div>
+
+  <textarea id="cAddress" placeholder="Endereço completo"></textarea>
+
+  <!-- Produtos e quantidade -->
+  <div class="row">
+    <select id="cProduct">
+      <option value="">Selecione o produto</option>
+      <option value="produto1" data-price="50">Produto 1 - R$50</option>
+      <option value="produto2" data-price="80">Produto 2 - R$80</option>
+      <option value="produto3" data-price="120">Produto 3 - R$120</option>
+    </select>
+    <input type="number" id="cQuantity" placeholder="Quantidade" min="1" value="1">
+  </div>
+
+  <!-- Pagamento e promo -->
+  <div class="row">
+    <select id="cPayment">
+      <option value="">Método de pagamento</option>
+      <option value="pix">PIX</option>
+      <option value="cartao">Cartão</option>
+      <option value="boleto">Boleto</option>
+    </select>
+    <input type="text" id="cPromo" placeholder="Código de desconto (opcional)">
+  </div>
+
+  <textarea id="cNotes" placeholder="Observações (opcional)"></textarea>
+
+  <!-- Resumo do pedido -->
+  <div class="order-summary">
+    <h5>Resumo do pedido:</h5>
+    <p id="summaryProduct">Produto: -</p>
+    <p id="summaryQuantity">Quantidade: -</p>
+    <p id="summaryPrice">Preço total: R$0</p>
+  </div>
+
+  <button class="btn primary" id="finishOrder">Enviar pedido</button>
+  <p id="orderStatus" style="margin-top:8px"></p>
+</div>
+<br>
+    
+<head>
+  ...
+  <!-- SEO extra -->
+  <meta name="keywords" content="suporte de TI, help desk, backup, redes, periféricos, relógios, BL Solutions" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BL Solutions • Suporte de TI + Loja">
+  <meta property="og:description" content="Suporte de TI profissional + mini loja de periféricos e relógios.">
+  <meta property="og:image" content="https://exemplo.bl-solutions.local/logo.png">
+  <meta property="og:url" content="https://exemplo.bl-solutions.local">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BL Solutions • Suporte de TI + Loja">
+  <meta name="twitter:description" content="Suporte de TI profissional + mini loja de periféricos e relógios.">
+  <meta name="twitter:image" content="https://exemplo.bl-solutions.local/logo.png">
+
+  <!-- Favicons extras -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  
+  </script>
+</head>
+<!-- Caixa de Feedback -->
+<section class="feedback-container">
+  <h2>Deixe seu Feedback</h2>
+  <p>Gostaríamos de saber sua opinião sobre nossos serviços. Preencha o formulário abaixo:</p>
+
+  <!-- ACTION para Formsubmit -->
+  <form action="https://formsubmit.co/bah.caruso15@gmail.com" method="POST" class="feedback-form">
+    <!-- campos do formulário -->
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite aqui seu feedback..." required></textarea>
+
+    <!-- Oculto: URL para página de sucesso (pode criar uma obrigado.html) -->
+    <input type="hidden" name="_next" value="https://seudominio.com.br/obrigado.html">
+    <!-- Oculto: desabilita captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Enviar Feedback</button>
+  </form>
+
+  <!-- Mensagem de sucesso simples em JS -->
+  <div id="mensagem-sucesso" style="display:none; margin-top:15px; color:green; font-weight:bold;">
+    Formulário enviado com sucesso! Obrigado pelo feedback.
+  </div>
+</section>
+
+<style>
+  .feedback-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: system-ui, sans-serif;
+  }
+
+  .feedback-container h2 {
+    margin-top: 0;
+    color: #222;
+  }
+
+  .feedback-container p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    margin-top: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .feedback-form button {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .feedback-form button:hover {
+    background-color: #0051a8;
+  }
+</style>
+
+<script>
+  // Exibir mensagem de sucesso sem redirecionar (opcional)
+  document.querySelector('.feedback-form').addEventListener('submit', function (e) {
+    // Mostra mensagem imediatamente
+    document.getElementById('mensagem-sucesso').style.display = 'block';
+    // Opcional: limpa campos
+    this.reset();
+    // Evita envio real (só para teste) – remova se quiser enviar de fato!
+    // e.preventDefault();
+  });
+</script>
+
+
+<body>
+ ...
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="backToTop" aria-label="Voltar ao topo" style="
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#0ea5e9;
+    color:#fff;
+    border:0;
+    padding:12px 14px;
+    border-radius:50%;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    cursor:pointer;
+    display:none;
+    z-index:20000;">↑</button>
+
+  <!-- FOOTER (dentro do footer que você já tem) -->
+  <div style="width:100%;text-align:center;font-size:0.8rem;color:#9ca3af;margin-top:8px;">
+    Este site é protegido por reCAPTCHA e aplicam-se a <a href="#" style="color:#9ca3af">Política de Privacidade</a> e os <a href="#" style="color:#9ca3af">Termos de Serviço</a>.
+  </div>
+
+<script>
+  /* Script para atualizar ano automaticamente */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* Botão voltar ao topo */
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 300){
+      backToTop.style.display = 'block';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+  backToTop.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+
+
+<!-- Modal de tickets -->
+<div class="ticket-modal-backdrop" id="ticketModalBackdrop" aria-hidden="true">
+  <div class="ticket-modal" role="dialog" aria-modal="true" aria-labelledby="ticketTitle">
+    <header>
+      <strong id="ticketTitle">Chamado</strong>
+      <button id="ticketModalClose" aria-label="Fechar modal" style="background:transparent;border:0;color:#fff;font-size:18px;cursor:pointer">✕</button>
+    </header>
+
+    <div style="position:relative; flex:1;">
+      <div class="ticket-loader" id="ticketLoader" aria-hidden="false" style="display:flex">
+        <div class="spinner" role="status" aria-label="Carregando"></div>
+      </div>
+
+      <iframe id="ticketIframe" src="about:blank" title="Formulário de chamado" loading="lazy" sandbox="allow-forms allow-scripts allow-same-origin"></iframe>
+    </div>
+
+    <div class="actions">
+      <a id="ticketOpenNew" href="#" target="_blank" rel="noopener" style="text-decoration:none; color:#334c7b; background:#ffface; padding:8px 10px; border-radius:8px">Abrir em nova aba</a>
+      <button id="ticketCloseBtn" class="btn" style="padding:8px 12px">Fechar</button>
+    </div>
+  </div>
+</div>
+<style>
+
+
+  
+/* Painel lateral (hamburger) */
+.hamburger-panel {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100vh;
+  background: #0f172a;
+  color: #e6eef8;
+  z-index: 10050;
+  box-shadow: 6px 0 30px rgba(2,6,23,.6);
+  transition: left .28s ease;
+  display:flex;
+  flex-direction:column;
+  padding:18px;
+  gap:12px;
+}
+.hamburger-panel.open { left: 0; }
+
+/* Backdrop atrás do painel */
+.hamburger-backdrop {
+  position: fixed;
+  inset:0;
+  background: rgba(0,0,0,.45);
+  z-index: 10040;
+  display:none;
+}
+.hamburger-backdrop.show { display:block; }
+
+/* Header do painel */
+.hamburger-panel .hp-head { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.hamburger-panel h3 { margin:0; font-size:1.05rem; color:#fff; }
+
+/* Itens */
+.hamburger-actions { display:flex; flex-direction:column; gap:8px; margin-top:8px; }
+.hamburger-actions button {
+  background:#0ea5e9; color:#042028; border:0; padding:10px 12px; border-radius:8px; cursor:pointer; text-align:left; font-weight:600;
+}
+.hamburger-actions button.secondary { background:#ffface; color:#111; font-weight:600; }
+
+.hamburger-actions a {
+  color:#cfeffd; text-decoration:none; font-size:0.95rem;
+}
+
+/* Mini footer no painel */
+.hamburger-panel .hp-footer { margin-top:auto; font-size:0.85rem; color:#9fb7c9; }
+
+/* Modal de ticket (overlay) */
+.ticket-modal-backdrop {
+  position:fixed; inset:0; display:none; align-items:center; justify-content:center;
+  background: rgba(0,0,0,.65); z-index:11000; padding:18px;
+}
+.ticket-modal-backdrop.show { display:flex; }
+.ticket-modal {
+  width:100%; max-width:1100px; height:82vh; background:#fff; border-radius:10px; overflow:hidden; display:flex; flex-direction:column;
+  box-shadow:0 10px 30px rgba(2,6,23,.6);
+}
+.ticket-modal header { display:flex; align-items:center; justify-content:space-between; padding:10px 14px; background:#334c7b; color:#fff; }
+.ticket-modal iframe { flex:1 1 auto; width:100%; border:0; min-height:0; background:#fff; }
+.ticket-modal .actions { padding:10px 14px; background:#f6f9fb; display:flex; gap:8px; justify-content:flex-end; align-items:center; }
+
+/* loader simples sobre iframe */
+.ticket-loader { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none; }
+.ticket-loader .spinner { width:46px; height:46px; border:5px solid rgba(0,0,0,.08); border-top-color:#334c7b; border-radius:50%; animation: spin .9s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
+
+/* ajuste mobile: menu-toggle visível e painel ocupa quase toda tela */
+@media (max-width:480px) {
+  .hamburger-panel { width:92vw; }
+}
+</style>
+<script>
+/* Toggle do painel hambúrguer - a sua div já chama toggleMenu() no onclick */
+function toggleMenu(){
+  const panel = document.getElementById('hamburgerPanel');
+  const backdrop = document.getElementById('hamburgerBackdrop');
+
+  const isOpen = panel.classList.contains('open');
+  if(isOpen){
+    panel.classList.remove('open');
+    backdrop.classList.remove('show');
+    backdrop.setAttribute('aria-hidden', 'true');
+  } else {
+    panel.classList.add('open');
+    backdrop.classList.add('show');
+    backdrop.setAttribute('aria-hidden', 'false');
+  }
+}
+
+/* Fechar via backdrop ou botão */
+document.getElementById('hamburgerBackdrop').addEventListener('click', toggleMenu);
+document.getElementById('hpCloseBtn').addEventListener('click', toggleMenu);
+
+/* Abrir modal de ticket a partir dos botões no painel */
+const openBtns = document.querySelectorAll('.hamburger-actions .open-ticket');
+const ticketBackdrop = document.getElementById('ticketModalBackdrop');
+const ticketIframe = document.getElementById('ticketIframe');
+const ticketTitle = document.getElementById('ticketTitle');
+const ticketLoader = document.getElementById('ticketLoader');
+const ticketOpenNew = document.getElementById('ticketOpenNew');
+
+openBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const url = btn.dataset.url;
+    const title = btn.dataset.title || 'Chamado';
+    // fecha o painel hambúrguer
+    const panel = document.getElementById('hamburgerPanel');
+    const backdrop = document.getElementById('hamburgerBackdrop');
+    panel.classList.remove('open');
+    backdrop.classList.remove('show');
+
+    // abre modal
+    ticketTitle.textContent = title;
+    ticketOpenNew.href = url;
+    ticketLoader.style.display = 'flex';
+    ticketIframe.src = url;
+    ticketBackdrop.classList.add('show');
+    ticketBackdrop.setAttribute('aria-hidden','false');
+
+    // foco e acessibilidade
+    setTimeout(()=> ticketIframe.focus(), 250);
+  });
+});
+
+/* Fechar modal */
+function closeTicketModal(){
+  ticketBackdrop.classList.remove('show');
+  ticketBackdrop.setAttribute('aria-hidden','true');
+  ticketIframe.src = 'about:blank';
+  ticketLoader.style.display = 'none';
+}
+document.getElementById('ticketModalClose').addEventListener('click', closeTicketModal);
+document.getElementById('ticketCloseBtn').addEventListener('click', closeTicketModal);
+ticketBackdrop.addEventListener('click', (ev)=> { if(ev.target === ticketBackdrop) closeTicketModal(); });
+
+/* Quando iframe carrega, escondemos o loader */
+ticketIframe.addEventListener('load', () => {
+  // se o iframe for blocked, onload pode ou não disparar dependendo; ainda assim escondemos loader.
+  ticketLoader.style.display = 'none';
+});
+
+/* Fechar com ESC */
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    // fecha painel se aberto
+    const panel = document.getElementById('hamburgerPanel');
+    if(panel.classList.contains('open')) toggleMenu();
+    if(ticketBackdrop.classList.contains('show')) closeTicketModal();
+  }
+});
+
+/* Opcional: atualiza link de fallback caso o iframe seja bloqueado */
+ticketOpenNew.addEventListener('click', () => {
+  // abre em nova aba; nada extra necessário
+});
+</script>
+</html>
+
